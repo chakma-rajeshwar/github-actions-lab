@@ -31,3 +31,7 @@ jobs:
           echo "Node version: $(node --version)"
           echo "Python version: $(python --version)"
           echo "Git version: $(git --version)"
+
+      # Step 5: List repository contents
+      - name: Display Date
+        run: date
