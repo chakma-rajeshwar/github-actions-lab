@@ -35,3 +35,11 @@ jobs:
       # Step 5: List repository contents
       - name: Display Date
         run: date
+
+      # Step 6: List repository contents
+      - name: Display Available disk space
+        run: df -h
+
+      # Step 7: List repository contents
+      - name: Display memory usage
+        run: free -m
