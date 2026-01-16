@@ -43,8 +43,13 @@ jobs:
       # Step 7: List repository contents
       - name: Display memory usage
         run: free -m
-
-      - name: Environment variable 
+         
+      # Step 8: Display custom messages
+      - name: Display custom message
         env:
           CUSTOM_MESSAGE: "Hello from GitHub Actions!"
-
+        run: echo "$CUSTOM_MESSAGE"
+      
+      - name: Conditional step
+        if: github.event_name == 'push'
+        run: echo "This was triggered by a push event"
