@@ -43,3 +43,8 @@ jobs:
       # Step 7: List repository contents
       - name: Display memory usage
         run: free -m
+
+      - name: Environment variable 
+        env:
+          CUSTOM_MESSAGE: "Hello from GitHub Actions!"
+
